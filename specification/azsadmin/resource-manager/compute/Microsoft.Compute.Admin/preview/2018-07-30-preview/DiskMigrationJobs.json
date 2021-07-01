@@ -30,16 +30,16 @@
         "description": "Returns a list of disk migration jobs.",
         "parameters": [
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/LocationParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/LocationParameter"
           },
           {
             "$ref": "DiskMigrationJobs.json#/parameters/MigrationJobStatusParameter"
           },
           {
-            "$ref": "Disks.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -52,7 +52,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/ErrorResponse"
             }
           }
         },
@@ -75,16 +75,16 @@
         "description": "Returns the requested disk migration job.",
         "parameters": [
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/LocationParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/LocationParameter"
           },
           {
             "$ref": "DiskMigrationJobs.json#/parameters/MigrationIdParameter"
           },
           {
-            "$ref": "Disks.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -97,7 +97,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/ErrorResponse"
             }
           }
         }
@@ -115,10 +115,10 @@
         "description": "Create a disk migration job.",
         "parameters": [
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/LocationParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/LocationParameter"
           },
           {
             "$ref": "DiskMigrationJobs.json#/parameters/MigrationIdParameter"
@@ -136,7 +136,7 @@
             "$ref": "DiskMigrationJobs.json#/parameters/DiskListParameter"
           },
           {
-            "$ref": "Disks.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -149,7 +149,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/ErrorResponse"
             }
           }
         }
@@ -169,16 +169,16 @@
         "description": "Cancel a disk migration job.",
         "parameters": [
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/LocationParameter"
           },
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/LocationParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/LocationParameter"
           },
           {
             "$ref": "DiskMigrationJobs.json#/parameters/MigrationIdParameter"
           },
           {
-            "$ref": "Disks.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -191,7 +191,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/ErrorResponse"
             }
           }
         }
@@ -358,7 +358,7 @@
       },
       "allOf": [
         {
-          "$ref": "../2015-12-01-preview/Compute.json#/definitions/Resource"
+          "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/Resource"
         }
       ]
     },
@@ -384,37 +384,6 @@
       "description": "List of disks.",
       "items": {
         "$ref": "Disks.json#/definitions/Disk"
-      }
-    },
-    "ErrorDetails": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "error": {
-          "description": "Object containing error details.",
-          "$ref": "#/definitions/ErrorDetailsInternal"
-        }
-      }
-    },
-    "ErrorDetailsInternal": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "code": {
-          "description": "The error code.",
-          "type": "string",
-          "readOnly": true
-        },
-        "message": {
-          "description": "The error message.",
-          "type": "string",
-          "readOnly": true
-        },
-        "target": {
-          "description": "The target of the particular error.",
-          "type": "string",
-          "readOnly": true
-        }
       }
     }
   },

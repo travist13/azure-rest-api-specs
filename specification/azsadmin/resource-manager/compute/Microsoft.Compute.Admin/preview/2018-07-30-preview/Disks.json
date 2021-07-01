@@ -30,10 +30,10 @@
         "description": "Returns a list of disks.",
         "parameters": [
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/LocationParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/Resource"
           },
           {
             "$ref": "Disks.json#/parameters/UserSubscriptionIdParameter"
@@ -57,7 +57,7 @@
             "$ref": "Disks.json#/parameters/DiskStartParameter"
           },
           {
-            "$ref": "Disks.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -70,7 +70,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/ErrorResponse"
             }
           }
         },
@@ -93,16 +93,16 @@
         "description": "Returns the disk.",
         "parameters": [
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "../2015-12-01-preview/Compute.json#/parameters/LocationParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/LocationParameter"
           },
           {
             "$ref": "Disks.json#/parameters/DiskIdParameter"
           },
           {
-            "$ref": "Disks.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -115,7 +115,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/ErrorResponse"
             }
           }
         }
@@ -185,7 +185,7 @@
       },
       "allOf": [
         {
-          "$ref": "../2015-12-01-preview/Compute.json#/definitions/Resource"
+          "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/Resource"
         }
       ]
     },
@@ -257,48 +257,9 @@
         "name": "AccountType",
         "modelAsString": true
       }
-    },
-    "ErrorDetails": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "error": {
-          "description": "Object containing error details.",
-          "$ref": "#/definitions/ErrorDetailsInternal"
-        }
-      }
-    },
-    "ErrorDetailsInternal": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "code": {
-          "description": "The error code.",
-          "type": "string",
-          "readOnly": true
-        },
-        "message": {
-          "description": "The error message.",
-          "type": "string",
-          "readOnly": true
-        },
-        "target": {
-          "description": "The target of the particular error.",
-          "type": "string",
-          "readOnly": true
-        }
-      }
     }
   },
   "parameters": {
-    "ApiVersionParameter": {
-      "name": "api-version",
-      "in": "query",
-      "description": "Client API Version.",
-      "required": true,
-      "type": "string",
-      "default": "2018-07-30-preview"
-    },
     "UserSubscriptionIdParameter": {
       "description": "User Subscription Id which the resource belongs to.",
       "name": "userSubscriptionId",

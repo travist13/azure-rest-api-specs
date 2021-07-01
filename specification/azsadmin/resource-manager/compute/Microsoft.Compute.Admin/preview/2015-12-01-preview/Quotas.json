@@ -30,16 +30,16 @@
         ],
         "parameters": [
           {
-            "$ref": "Compute.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Compute.json#/parameters/LocationParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/LocationParameter"
           },
           {
             "$ref": "#/parameters/QuotaParameter"
           },
           {
-            "$ref": "Compute.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -71,16 +71,16 @@
         ],
         "parameters": [
           {
-            "$ref": "Compute.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Compute.json#/parameters/LocationParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/LocationParameter"
           },
           {
             "$ref": "#/parameters/QuotaParameter"
           },
           {
-            "$ref": "Compute.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
           },
           {
             "$ref": "#/parameters/NewQuotaParameter"
@@ -115,16 +115,16 @@
         ],
         "parameters": [
           {
-            "$ref": "Compute.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Compute.json#/parameters/LocationParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/LocationParameter"
           },
           {
             "$ref": "#/parameters/QuotaParameter"
           },
           {
-            "$ref": "Compute.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -155,13 +155,13 @@
         ],
         "parameters": [
           {
-            "$ref": "Compute.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Compute.json#/parameters/LocationParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/LocationParameter"
           },
           {
-            "$ref": "Compute.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -191,7 +191,7 @@
       },
       "allOf": [
         {
-          "$ref": "Compute.json#/definitions/Resource"
+          "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/Resource"
         }
       ]
     },

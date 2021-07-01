@@ -70,6 +70,7 @@ input-file:
     - Microsoft.Compute.Admin/preview/2015-12-01-preview/VMExtensions.json
     - Microsoft.Compute.Admin/stable/2020-11-01/Features.json
     - Microsoft.Compute.Admin/stable/2021-01-01/Quotas.json
+    - Microsoft.Compute.Admin/stable/2021-03-30/ScaleUnits.json
     - Microsoft.Compute.Admin/stable/2021-04-01/Disks.json
     - Microsoft.Compute.Admin/stable/2021-04-01/DiskMigrationJobs.json
 ```
@@ -88,10 +89,10 @@ require: $(this-folder)/../../../../profiles/readme.md
 input-file:
   - $(this-folder)/Microsoft.Compute.Admin/preview/2015-12-01-preview/Compute.json
   - $(this-folder)/Microsoft.Compute.Admin/preview/2015-12-01-preview/PlatformImages.json
-  - $(this-folder)/Microsoft.Compute.Admin/preview/2018-02-09/Quotas.json
   - $(this-folder)/Microsoft.Compute.Admin/preview/2015-12-01-preview/VMExtensions.json
-  - $(this-folder)/Microsoft.Compute.Admin/preview/2018-07-30-preview/Disks.json
-  - $(this-folder)/Microsoft.Compute.Admin/preview/2018-07-30-preview/DiskMigrationJobs.json
+  - $(this-folder)/Microsoft.Compute.Admin/stable/2020-11-01/Features.json
+  - $(this-folder)/Microsoft.Compute.Admin/stable/2021-01-01/Quotas.json
+  - $(this-folder)/Microsoft.Compute.Admin/stable/2021-03-30/ScaleUnits.json
   - $(this-folder)/Microsoft.Compute.Admin/stable/2021-04-01/Disks.json
   - $(this-folder)/Microsoft.Compute.Admin/stable/2021-04-01/DiskMigrationJobs.json
 
