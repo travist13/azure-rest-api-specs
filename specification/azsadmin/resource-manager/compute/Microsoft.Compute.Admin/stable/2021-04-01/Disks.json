@@ -233,7 +233,7 @@
       },
       "allOf": [
         {
-          "$ref": "../../preview/2015-12-01-preview/Compute.json#/definitions/Resource"
+          "$ref": "../../preview/2015-12-01-preview/Compute.json#/definitions/CrpResource"
         }
       ]
     },
