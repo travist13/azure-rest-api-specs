@@ -52,7 +52,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "../2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
+              "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/ErrorResponse"
             }
           }
         },
@@ -97,7 +97,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "../2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
+              "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/ErrorResponse"
             }
           }
         }
@@ -149,7 +149,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "../2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
+              "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/ErrorResponse"
             }
           }
         }
@@ -191,7 +191,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "../2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
+              "$ref": "../../../../../../common-types/resource-management/v2/types.json#/definitions/ErrorResponse"
             }
           }
         }
