@@ -53,7 +53,7 @@
     }
   },
   "definitions": {
-    "Resource": {
+    "CrpResource": {
       "description": "Base resource object.",
       "type": "object",
       "properties": {
@@ -78,6 +78,37 @@
         }
       },
       "x-ms-azure-resource": true
+    },
+    "CrpErrorDetails": {
+      "description": "Error details.",
+      "type": "object",
+      "properties": {
+        "error": {
+          "description": "Object containing error details.",
+          "$ref": "#/definitions/CrpErrorDetailsInternal"
+        }
+      }
+    },
+    "CrpErrorDetailsInternal": {
+      "description": "Error details.",
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "The error code.",
+          "type": "string",
+          "readOnly": true
+        },
+        "message": {
+          "description": "The error message.",
+          "type": "string",
+          "readOnly": true
+        },
+        "target": {
+          "description": "The target of the particular error.",
+          "type": "string",
+          "readOnly": true
+        }
+      }
     },
     "ProvisioningState": {
       "description": "The provisioning state of the resource.",

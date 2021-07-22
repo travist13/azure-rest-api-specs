@@ -9,7 +9,7 @@
     "https"
   ],
   "paths": {
-    "/providers/Microsoft.Compute.Admin/locations/{location}/computeScaleUnits/{scaleUnitName}": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Compute.Admin/locations/{location}/computeScaleUnits/{scaleUnitName}": {
       "get": {
         "x-ms-examples": {
           "Get an existing scale set.": {
@@ -29,6 +29,9 @@
           "application/json"
         ],
         "parameters": [
+          {
+            "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+          },
           {
             "$ref": "ScaleUnits.json#/parameters/LocationParameter"
           },

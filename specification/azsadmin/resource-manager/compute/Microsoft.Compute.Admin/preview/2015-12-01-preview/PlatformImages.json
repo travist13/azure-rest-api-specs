@@ -49,7 +49,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "Compute.json#/definitions/CrpErrorDetails"
             }
           }
         }
@@ -101,7 +101,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "Compute.json#/definitions/CrpErrorDetails"
             }
           }
         }
@@ -166,7 +166,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "Compute.json#/definitions/CrpErrorDetails"
             }
           }
         },
@@ -211,7 +211,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "Compute.json#/definitions/CrpErrorDetails"
             }
           },
           "200": {
@@ -329,37 +329,6 @@
           "description": "Platform image properties.",
           "x-ms-client-flatten": true,
           "$ref": "#/definitions/PlatformImageProperties"
-        }
-      }
-    },
-    "ErrorDetails": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "error": {
-          "description": "Object containing error details.",
-          "$ref": "#/definitions/ErrorDetailsInternal"
-        }
-      }
-    },
-    "ErrorDetailsInternal": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "code": {
-          "description": "The error code.",
-          "type": "string",
-          "readOnly": true
-        },
-        "message": {
-          "description": "The error message.",
-          "type": "string",
-          "readOnly": true
-        },
-        "target": {
-          "description": "The target of the particular error.",
-          "type": "string",
-          "readOnly": true
         }
       }
     }

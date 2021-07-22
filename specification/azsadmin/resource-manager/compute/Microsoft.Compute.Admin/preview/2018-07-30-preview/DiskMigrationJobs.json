@@ -52,7 +52,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
             }
           }
         },
@@ -97,7 +97,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
             }
           }
         }
@@ -149,7 +149,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
             }
           }
         }
@@ -191,7 +191,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
             }
           }
         }
@@ -384,37 +384,6 @@
       "description": "List of disks.",
       "items": {
         "$ref": "Disks.json#/definitions/Disk"
-      }
-    },
-    "ErrorDetails": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "error": {
-          "description": "Object containing error details.",
-          "$ref": "#/definitions/ErrorDetailsInternal"
-        }
-      }
-    },
-    "ErrorDetailsInternal": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "code": {
-          "description": "The error code.",
-          "type": "string",
-          "readOnly": true
-        },
-        "message": {
-          "description": "The error message.",
-          "type": "string",
-          "readOnly": true
-        },
-        "target": {
-          "description": "The target of the particular error.",
-          "type": "string",
-          "readOnly": true
-        }
       }
     }
   },
