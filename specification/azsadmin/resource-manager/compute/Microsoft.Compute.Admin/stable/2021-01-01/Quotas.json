@@ -30,16 +30,16 @@
         ],
         "parameters": [
           {
-            "$ref": "Quotas.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Quotas.json#/parameters/LocationParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/LocationParameter"
           },
           {
             "$ref": "Quotas.json#/parameters/QuotaParameter"
           },
           {
-            "$ref": "Quotas.json#/parameters/ApiVersionParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -77,16 +77,16 @@
         ],
         "parameters": [
           {
-            "$ref": "Quotas.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Quotas.json#/parameters/LocationParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/LocationParameter"
           },
           {
             "$ref": "Quotas.json#/parameters/QuotaParameter"
           },
           {
-            "$ref": "Quotas.json#/parameters/ApiVersionParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/ApiVersionParameter"
           },
           {
             "$ref": "Quotas.json#/parameters/NewQuotaParameter"
@@ -127,16 +127,16 @@
         ],
         "parameters": [
           {
-            "$ref": "Quotas.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Quotas.json#/parameters/LocationParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/LocationParameter"
           },
           {
             "$ref": "Quotas.json#/parameters/QuotaParameter"
           },
           {
-            "$ref": "Quotas.json#/parameters/ApiVersionParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -173,13 +173,13 @@
         ],
         "parameters": [
           {
-            "$ref": "Quotas.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Quotas.json#/parameters/LocationParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/LocationParameter"
           },
           {
-            "$ref": "Quotas.json#/parameters/ApiVersionParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -292,28 +292,6 @@
     }
   },
   "parameters": {
-    "SubscriptionIdParameter": {
-      "name": "subscriptionId",
-      "in": "path",
-      "description": "Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-      "required": true,
-      "type": "string"
-    },
-    "ApiVersionParameter": {
-      "name": "api-version",
-      "in": "query",
-      "description": "Client API Version.",
-      "required": true,
-      "type": "string"
-    },
-    "LocationParameter": {
-      "description": "Location of the resource.",
-      "name": "location",
-      "in": "path",
-      "required": true,
-      "type": "string",
-      "x-ms-parameter-location": "method"
-    },
     "QuotaParameter": {
       "description": "Name of the quota.",
       "name": "quotaName",

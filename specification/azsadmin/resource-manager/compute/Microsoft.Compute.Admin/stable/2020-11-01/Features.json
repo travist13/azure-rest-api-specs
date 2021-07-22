@@ -30,16 +30,16 @@
         ],
         "parameters": [
           {
-            "$ref": "Features.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Features.json#/parameters/LocationParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/LocationParameter"
           },
           {
             "$ref": "Features.json#/parameters/FeatureParameter"
           },
           {
-            "$ref": "Features.json#/parameters/ApiVersionParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -52,7 +52,7 @@
           "default": {
             "description": "Default error response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../preview/2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
             }
           }
         }
@@ -79,13 +79,13 @@
         ],
         "parameters": [
           {
-            "$ref": "Features.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Features.json#/parameters/LocationParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/LocationParameter"
           },
           {
-            "$ref": "Features.json#/parameters/ApiVersionParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -98,7 +98,7 @@
           "default": {
             "description": "Default error response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../preview/2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
             }
           }
         },
@@ -128,16 +128,16 @@
         ],
         "parameters": [
           {
-            "$ref": "Features.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Features.json#/parameters/LocationParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/LocationParameter"
           },
           {
             "$ref": "Features.json#/parameters/FeatureParameter"
           },
           {
-            "$ref": "Features.json#/parameters/ApiVersionParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/ApiVersionParameter"
           },
           {
             "$ref": "Features.json#/parameters/GlobalFeatureSettingsParameter"
@@ -150,7 +150,7 @@
           "default": {
             "description": "Default error response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../preview/2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
             }
           }
         }
@@ -177,16 +177,16 @@
         ],
         "parameters": [
           {
-            "$ref": "Features.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Features.json#/parameters/LocationParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/LocationParameter"
           },
           {
             "$ref": "Features.json#/parameters/FeatureParameter"
           },
           {
-            "$ref": "Features.json#/parameters/ApiVersionParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/ApiVersionParameter"
           },
           {
             "$ref": "Features.json#/parameters/TenantSubscriptionFeatureSettingsParameter"
@@ -199,7 +199,7 @@
           "default": {
             "description": "Default error response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../preview/2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
             }
           }
         }
@@ -226,16 +226,16 @@
         ],
         "parameters": [
           {
-            "$ref": "Features.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "Features.json#/parameters/LocationParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/LocationParameter"
           },
           {
             "$ref": "Features.json#/parameters/FeatureParameter"
           },
           {
-            "$ref": "Features.json#/parameters/ApiVersionParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/ApiVersionParameter"
           },
           {
             "$ref": "Features.json#/parameters/TenantSubscriptionFeatureSettingsParameter"
@@ -248,7 +248,7 @@
           "default": {
             "description": "Default error response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../preview/2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
             }
           }
         }
@@ -341,62 +341,9 @@
           "type": "string"
         }
       }
-    },
-    "ErrorDetails": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "error": {
-          "description": "Object containing error details.",
-          "$ref": "#/definitions/ErrorDetailsInternal"
-        }
-      }
-    },
-    "ErrorDetailsInternal": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "code": {
-          "description": "The error code.",
-          "type": "string",
-          "readOnly": true
-        },
-        "message": {
-          "description": "The error message.",
-          "type": "string",
-          "readOnly": true
-        },
-        "target": {
-          "description": "The target of the particular error.",
-          "type": "string",
-          "readOnly": true
-        }
-      }
     }
   },
   "parameters": {
-    "SubscriptionIdParameter": {
-      "name": "subscriptionId",
-      "in": "path",
-      "description": "Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-      "required": true,
-      "type": "string"
-    },
-    "ApiVersionParameter": {
-      "name": "api-version",
-      "in": "query",
-      "description": "Client API Version.",
-      "required": true,
-      "type": "string"
-    },
-    "LocationParameter": {
-      "description": "Location of the resource.",
-      "name": "location",
-      "in": "path",
-      "required": true,
-      "type": "string",
-      "x-ms-parameter-location": "method"
-    },
     "FeatureParameter": {
       "description": "Name of the feature.",
       "name": "featureName",

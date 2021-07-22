@@ -33,13 +33,13 @@
             "$ref": "../../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "ScaleUnits.json#/parameters/LocationParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/LocationParameter"
           },
           {
             "$ref": "ScaleUnits.json#/parameters/ScaleUnitParameter"
           },
           {
-            "$ref": "ScaleUnits.json#/parameters/ApiVersionParameter"
+            "$ref": "../../preview/2015-12-01-preview/Compute.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -52,7 +52,7 @@
           "default": {
             "description": "Default Response.",
             "schema": {
-              "$ref": "#/definitions/ErrorDetails"
+              "$ref": "../../preview/2015-12-01-preview/Compute.json#/definitions/CrpErrorDetails"
             }
           }
         }
@@ -213,55 +213,9 @@
         }
       },
       "x-ms-azure-resource": true
-    },
-    "ErrorDetails": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "error": {
-          "description": "Object containing error details.",
-          "$ref": "#/definitions/ErrorDetailsInternal"
-        }
-      }
-    },
-    "ErrorDetailsInternal": {
-      "description": "Error details.",
-      "type": "object",
-      "properties": {
-        "code": {
-          "description": "The error code.",
-          "type": "string",
-          "readOnly": true
-        },
-        "message": {
-          "description": "The error message.",
-          "type": "string",
-          "readOnly": true
-        },
-        "target": {
-          "description": "The target of the particular error.",
-          "type": "string",
-          "readOnly": true
-        }
-      }
     }
   },
   "parameters": {
-    "ApiVersionParameter": {
-      "name": "api-version",
-      "in": "query",
-      "description": "Client API Version.",
-      "required": true,
-      "type": "string"
-    },
-    "LocationParameter": {
-      "description": "Location of the resource.",
-      "name": "location",
-      "in": "path",
-      "required": true,
-      "type": "string",
-      "x-ms-parameter-location": "method"
-    },
     "ScaleUnitParameter": {
       "description": "Name of the scale unit.",
       "name": "scaleUnitName",

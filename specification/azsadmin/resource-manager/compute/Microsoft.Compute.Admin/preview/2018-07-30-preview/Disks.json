@@ -36,7 +36,7 @@
             "$ref": "../2015-12-01-preview/Compute.json#/parameters/LocationParameter"
           },
           {
-            "$ref": "Disks.json#/parameters/UserSubscriptionIdParameter"
+            "$ref": "../2015-12-01-preview/Compute.json#/parameters/UserSubscriptionIdParameter"
           },
           {
             "$ref": "Disks.json#/parameters/DiskStateParameter"
